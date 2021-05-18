@@ -1,0 +1,220 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+#headline{
+    text-align: center;
+    color: #004ba0;
+    font-size: 2vw;
+}
+
+#searchBy{
+    text-align: center;
+    padding: 6px 10px;
+}
+#searchBy > span{
+    padding: 5px 10px;
+    display: inline-block;
+    color: #004ba0;
+}
+
+#searchBy > span{
+    padding: 5px 10px;
+    display: inline-block;
+    color: #004ba0;
+}
+
+#toggleBtnGroup > ToggleButton{
+    margin-top: 4px;
+}
+
+.btn-primary .btn-other{
+    padding: 5px 2px;
+}
+
+.menu-item:active {
+    color: #fff;
+}
+.menu-item{
+    color: #282c34;
+}
+
+.btn-primary{
+}
+
+.autoCompleteDropdown {
+    padding-top: 10px;
+}
+
+.filterGroup{
+    margin-bottom: 12px;
+    /*background-color: #ffd54f;*/
+}
+
+#dataTable {
+    height: 90vh;
+    display: block;
+    overflow-y: auto;
+    box-shadow: 0 1px 11px 0 rgba(9, 9, 9, 0.01), 0 1px 11px 0 rgba(5, 5, 5, 0.05);
+}
+
+#dataHeader {
+    box-shadow: 0 1px 1px 0 rgba(9, 9, 9, 0.01), 0 1px 11px 0 rgba(5, 5, 5, 0.05);
+
+}
+
+
+MDBTable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.rowHead {
+    color: #004ba0;
+    font-weight: bold;
+    font-size: 1vw;
+    text-align: center;
+}
+.rowHead:first-child{
+    text-align: left;
+}
+
+/*th{*/
+/*  text-align: center;*/
+/*  position: -webkit-sticky;*/
+/*  position: sticky;*/
+/*  top: 0;*/
+/*  z-index: 2;*/
+/*}*/
+
+/*#tableBody{*/
+/*}*/
+
+td:first-child {
+    width: 25%;
+}
+
+td {
+    width: 15%;
+    font-size: 1vw;
+}
+
+.cellContent {
+    text-align: center;
+    margin: 0 0 5px 0;
+    font-size: 0.8vw;
+}
+
+.NA {
+    margin: 0;
+    font-size: 0.8vw;
+    text-align: center;
+}
+
+#childTable {
+    margin: 0;
+}
+
+
+.cellContent > i {
+    margin-bottom: 5px;
+    font-style: normal;
+    padding: 2px 5px;
+    width: fit-content;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.booked > i {
+    background: #EF5350;
+    color: #fff;
+}
+
+.available > i {
+    background: #66BB6A;
+    color: #fff;
+}
+
+#age18 {
+    background: #42A5F5;
+    color: #fff;
+}
+
+#age45 {
+    background: #FFA726;
+    color: #fff;
+}
+
+#loader{
+    position: relative;
+    top: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#errorMessage{
+    text-align: center;
+    color: #EF5350;
+    width: 100%;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 769px) {
+    #headline{
+        font-size: 5vw;
+    }
+
+    .cellContent {
+        margin: 2px 0 4px 0;
+        font-size: 2.5vw;
+    }
+
+    .rowHead {
+        color: #004ba0;
+        font-weight: bold;
+        font-size: 3vw;
+    }
+
+    td {
+        width: 33%;
+        font-size: 2vw;
+    }
+
+    .NA{
+        font-size: 4vw;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
